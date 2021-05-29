@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainControl">
+   <children>
+      <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="itemOpen" mnemonicParsing="false" text="Open" />
+                        <MenuItem fx:id="itemSave" mnemonicParsing="false" text="Save" />
+                        <MenuItem fx:id="itemClose" mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem fx:id="itemClear" mnemonicParsing="false" text="Clear" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem fx:id="itemAbout" mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar prefHeight="40.0">
+               <items>
+                  <Button fx:id="btnscan" alignment="CENTER" mnemonicParsing="false">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/directory.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnSave" alignment="CENTER" mnemonicParsing="false">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/diskette.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </items>
+            </ToolBar>
+            <AnchorPane prefHeight="415.0" prefWidth="752.0" styleClass="root" stylesheets="@style.css">
+               <children>
+                  <VBox prefHeight="391.0" prefWidth="746.0" stylesheets="@style.css">
+                     <children>
+                        <Text fill="WHITE" layoutX="35.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trames détectées :">
+                           <VBox.margin>
+                              <Insets left="25.0" top="25.0" />
+                           </VBox.margin>
+                        </Text>
+                        <ListView fx:id="listTrame" prefHeight="200.0" prefWidth="577.0">
+                           <VBox.margin>
+                              <Insets bottom="25.0" left="25.0" right="25.0" />
+                           </VBox.margin>
+                        </ListView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Trace d'erreur:">
+                           <VBox.margin>
+                              <Insets left="25.0" right="25.0" />
+                           </VBox.margin>
+                        </Text>
+                        <ListView fx:id="listErreur" layoutX="35.0" layoutY="108.0" prefHeight="80.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="25.0" left="25.0" right="25.0" />
+                           </VBox.margin>
+                        </ListView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

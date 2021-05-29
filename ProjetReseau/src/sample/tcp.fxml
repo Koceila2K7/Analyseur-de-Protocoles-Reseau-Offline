@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="517.0" prefWidth="613.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControlTcp">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefWidth="600.0">
+         <children>
+            <HBox prefWidth="200.0" styleClass="part">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="lblSourcePortNumber" alignment="CENTER" prefHeight="50.0" prefWidth="290.0" text="Source port number">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDestinationPortNumber" alignment="CENTER" layoutX="52.0" layoutY="12.0" maxWidth="450.0" prefHeight="50.0" prefWidth="290.0" text="Destination port number">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="18.0" layoutY="232.0" prefWidth="200.0" styleClass="part">
+               <children>
+                  <Label fx:id="lblSequenceNumber" alignment="CENTER" prefHeight="50.0" prefWidth="589.0" text="Sequence number">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefWidth="200.0" styleClass="part">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="lblAcknowledgmentNumber" alignment="CENTER" layoutX="12.0" layoutY="12.0" prefHeight="50.0" prefWidth="594.0" text="Acknowledgment number">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="18.0" layoutY="134.0" prefWidth="200.0" styleClass="part">
+               <children>
+                  <Label fx:id="lblTHL" alignment="CENTER" prefHeight="50.0" prefWidth="98.0" text="THL">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblReserved" alignment="CENTER" layoutX="12.0" layoutY="12.0" prefHeight="50.0" prefWidth="77.0" text="Reserved">
+                     <font>
+                        <Font name="Consolas" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblU" alignment="CENTER" layoutX="12.0" layoutY="12.0" prefHeight="50.0" prefWidth="50.0" text="U">
+                     <font>
+                        <Font name="Consolas" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblA" alignment="CENTER" layoutX="340.0" layoutY="12.0" prefHeight="50.0" prefWidth="50.0" text="A">
+                     <font>
+                        <Font name="Consolas" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblP" alignment="CENTER" layoutX="340.0" layoutY="12.0" prefHeight="50.0" prefWidth="50.0" text="P">
+                     <font>
+                        <Font name="Consolas" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblR" alignment="CENTER" layoutX="399.0" layoutY="12.0" prefHeight="50.0" prefWidth="50.0" text="R">
+                     <font>
+                        <Font name="Consolas" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblS" alignment="CENTER" layoutX="457.0" layoutY="12.0" prefHeight="50.0" prefWidth="50.0" text="S">
+                     <font>
+                        <Font name="Consolas" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblF" alignment="CENTER" layoutX="516.0" layoutY="12.0" prefHeight="50.0" prefWidth="50.0" text="F">
+                     <font>
+                        <Font name="Consolas" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblWindow" alignment="CENTER" layoutX="308.0" layoutY="12.0" prefHeight="50.0" prefWidth="190.0" text="Window">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefWidth="200.0" styleClass="part">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="lblChecksum" alignment="CENTER" prefHeight="50.0" prefWidth="290.0" text="Checksum">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblUrgentPointer" alignment="CENTER" layoutX="12.0" layoutY="12.0" prefHeight="50.0" prefWidth="290.0" text="Urgent Pointer">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="18.0" layoutY="300.0" prefWidth="200.0" styleClass="part">
+               <children>
+                  <Label fx:id="lblOption" alignment="CENTER" prefHeight="50.0" prefWidth="582.0" text="Options + padding">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="18.0" layoutY="319.0" prefWidth="200.0" styleClass="part">
+               <children>
+                  <Label fx:id="lblData" alignment="CENTER" prefHeight="50.0" prefWidth="690.0" text="Data">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
